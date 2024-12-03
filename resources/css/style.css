@@ -1,0 +1,41 @@
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, rgba(0, 150, 240, 0.3), rgba(0, 200, 255, 0.6)), url('/images/background.jpg');
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .glass {
+        background: rgba(255, 255, 255, 0.5); /* Latar belakang semi-transparan */
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        margin-bottom: 20px; /* Jarak antara teks dan kotak */
+    }
+    .container {
+        display: flex;
+        gap: 20px; /* Jarak antar kotak */
+    }
+    .box {
+        width: 200px; /* Lebar kotak */
+        height: 80px; /* Tinggi kotak */
+        background: linear-gradient(135deg, rgba(0, 150, 240, 1), rgba(0, 200, 255, 1)); /* Gradasi biru */
+        border-radius: 40px; /* Sudut membulat untuk bentuk lonjong */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #111212; /* Warna teks awal */
+        font-size: 1.2rem;
+        transition: background 0.5s ease, color 0.5s ease; /* Transisi untuk perubahan warna */
+        cursor: pointer;
+    }
+    .box:hover {
+        background: linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(50, 50, 50, 1)); /* Gradasi hitam saat hover */
+        color: rgba(0, 150, 240, 1); /* Warna teks berubah menjadi biru saat hover */
+    }
